@@ -1,7 +1,3 @@
-Operational code and development for Scott A. Shafer's EggLogger project.
-
-This is a software-only resource. Hardware DevOps are currently offline. 
-
 For context, please see:
 https://doi.org/10.1371/journal.pone.0097898
 

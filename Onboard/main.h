@@ -24,7 +24,7 @@
  
 #include <stdio.h>
 #include <stdlib.h>
-#include <p24F32KA302.h>
+#include <xc.h>
 #include <string.h>
 #include <stdbool.h>
 #include "configure.h"

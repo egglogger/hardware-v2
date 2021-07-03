@@ -24,7 +24,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <p24F32KA302.h>
+#include <xc.h>
 
 #ifndef EL2_UTILITIES_H
 #define EL2_UTILITIES_H

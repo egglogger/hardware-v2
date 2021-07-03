@@ -22,7 +22,7 @@
  * uSD card I/O functions
  */
 
-#include <p24F32KA302.h>
+#include <xc.h>
 #include "uSDio.h"
 
 //---------------------------------------------------------------------

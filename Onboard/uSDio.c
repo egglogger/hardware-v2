@@ -137,7 +137,7 @@ FRESULT writeDataFile(unsigned int device_id, unsigned int fileHour, BYTE *buff,
     unsigned int tries;
 
     // Open file, name based on data hour
-    bytesWritten = sprintf(fileName, "%03dDAT%03d.txt", device_id, fileHour);
+    bytesWritten = sprintf(fileName, "%dDAT%03d.txt", device_id, fileHour);
     result = f_open(&file, fileName, FA_OPEN_ALWAYS | FA_WRITE);
 
     // Append to end of file

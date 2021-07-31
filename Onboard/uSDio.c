@@ -66,6 +66,16 @@ FRESULT writeConfigFile(int device_id) {
         return result;
     }
 
+    /* Sign with Coleridge quatrain*/
+    /* bytesWritten = sprintf(message, "The spirit who bideth by himself\n", device_id, 0x0D, 0x0A);
+    /* result = f_write(&file, message, strlen(message), &bytesWritten);
+    /* bytesWritten = sprintf(message, "In the land of mist and snow,\n", device_id, 0x0D, 0x0A);
+    /* result = f_write(&file, message, strlen(message), &bytesWritten);
+    /* bytesWritten = sprintf(message, "He loved the bird, that loved the man,\n", device_id, 0x0D, 0x0A);
+    /* result = f_write(&file, message, strlen(message), &bytesWritten);
+    /* bytesWritten = sprintf(message, "Who shot him with his bow.\n\n", device_id, 0x0D, 0x0A);
+    /* result = f_write(&file, message, strlen(message), &bytesWritten);*/
+    
     /* Write Device ID */
     bytesWritten = sprintf(message, "Device ID = %d%c%c", device_id, 0x0D, 0x0A);
     result = f_write(&file, message, strlen(message), &bytesWritten);
@@ -137,7 +147,7 @@ FRESULT writeDataFile(unsigned int device_id, unsigned int fileHour, BYTE *buff,
     unsigned int tries;
 
     // Open file, name based on data hour
-    bytesWritten = sprintf(fileName, "%dDAT%03d.txt", device_id, fileHour);
+    bytesWritten = sprintf(fileName, "%03dD%03d.txt", device_id, fileHour);
     result = f_open(&file, fileName, FA_OPEN_ALWAYS | FA_WRITE);
 
     // Append to end of file

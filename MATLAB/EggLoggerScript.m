@@ -4,7 +4,7 @@
 % by: Geoff Bower and Alex Naimain  %
 %                                   %
 % Started: March 12, 2012           %
-% Last Updated: September 9, 2020   %
+% Last Updated: August 7, 2021      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear all;
@@ -56,7 +56,7 @@ end
 cd(folder_name);
 
 % See how many files there are
-files = dir('*DAT*.TXT');
+files = dir('*-*.TXT');
 nestnum = files(1,1).name(1,1:2);
 loggernum = str2num(nestnum);
 startdate = num2str(startdate);

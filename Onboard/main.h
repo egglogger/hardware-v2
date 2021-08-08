@@ -24,7 +24,7 @@
  
 #include <stdio.h>
 #include <stdlib.h>
-#include <p24F32KA302.h>
+#include <xc.h>
 #include <string.h>
 #include <stdbool.h>
 #include "configure.h"
@@ -45,7 +45,7 @@
 #define DATA_BUFFER_SIZE 16     // buffer updates per write
 #define NEW_FILE_TIME 3600      // seconds per data file
 
-#define DEVICE_ID 60 /* 0 to 999 valid */
+#define DEVICE_ID 21 /* 0 to 999 valid */
 
 void configureSensors(EL2Data *data);
 void startSensors(EL2Data *data);
